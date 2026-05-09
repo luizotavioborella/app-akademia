@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    resize: none;
+}
+
+:root {
+    --cor-fundo: #F6E4D1;
+    --cor-principal: #FF6D1D;
+    --cor-fundo-secundaria: #E1DEDE;
+    --cor-textos: #000000;
+    --cor-fundo-terciaria: #BEBEBE;
+    --azul-escuro: #1E2631;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    padding: 30px 45px;
+}
+
+h2 {
+    font-family: "Krona One", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.arquivo {
+    background-color: var(--cor-fundo-secundaria);
+    width: 100%;
+    height: 280px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.arquivo img {
+    width: 130px;
+    height: auto;
+    opacity: 0.55;
+}
+
+.arquivo p {
+    font-size: 30px;
+    color: #8a8a8a;
+}
+
+main a {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: var(--cor-principal);
+    padding: 8px 35px;
+    border-radius: 30px;
+    color: var(--cor-fundo);
+    border: 2px solid var(--cor-principal);
+    transition: all 0.4s;
+}
+
+main a:hover {
+    background-color: transparent;
+    color: var(--cor-principal);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-top: 1px solid black;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    margin-top: 40px;
+}
+
+footer img {
+    margin-bottom: 30px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer nav a {
+    color: var(--cor-fundo);
+}

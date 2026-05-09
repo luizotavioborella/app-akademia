@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-top: 1px black solid;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    align-items: center;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer nav a {
+    color: var(--cor-fundo);
+}
+
+footer img {
+    width: 100px;
+}

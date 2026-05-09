@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    resize: none;
+}
+
+:root {
+    --cor-fundo: #F6E4D1;
+    --cor-principal: #FF6D1D;
+    --cor-fundo-secundaria: #E1DEDE;
+    --cor-textos: #000000;
+    --cor-fundo-terciaria: #BEBEBE;
+    --azul-escuro: #1E2631;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "Inter", sans-serif;
+    color: var(--azul-escuro);
+}
+
+main {
+    padding: 15px 25px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cabecalho h2 {
+    font-family: "Krona One", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.botoes {
+    display: flex;
+    gap: 28px;
+}
+
+.botoes a {
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    padding: 8px 28px;
+    border-radius: 30px;
+    border: 2px solid var(--cor-principal);
+    font-size: 16px;
+    transition: all 0.4s;
+}
+
+.botoes a:hover {
+    background-color: transparent;
+    color: var(--cor-principal);
+}
+
+.tabela {
+    width: 100%;
+    background-color: #d8d3d3;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: 1.2fr 1.1fr 1.1fr 0.8fr 0.4fr;
+    align-items: center;
+    padding: 6px 8px;
+    border-bottom: 4px solid var(--azul-escuro);
+    font-size: 16px;
+}
+
+.linha:last-child {
+    border-bottom: none;
+}
+
+.cabecalho-tabela {
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    border-bottom: none;
+    padding: 3px 8px;
+}
+
+.ativo {
+    background-color: #4DF86D;
+    color: var(--azul-escuro);
+    padding: 5px 18px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.inativo {
+    background-color: #BEBEBE;
+    color: var(--azul-escuro);
+    padding: 5px 15px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.acoes {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.acoes img {
+    width: 28px;
+    height: 28px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-top: 1px black solid;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    margin-top: 160px;
+}
+
+footer img {
+    margin-bottom: 30px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer nav a {
+    color: var(--cor-fundo);
+}
