@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    resize: none;
+}
+
+:root {
+    --cor-fundo: #F6E4D1;
+    --cor-principal: #FF6D1D;
+    --cor-fundo-secundaria: #E1DEDE;
+    --cor-textos: #000000;
+    --cor-fundo-terciaria: #BEBEBE;
+    --azul-escuro: #1E2631;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 25px 45px;
+}
+
+h2 {
+    font-family: "Krona One", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.conteudo2 {
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.conteudo {
+    width: 58%;
+}
+
+.perfil-topo {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.perfil-topo img {
+    width: 150px;
+    border-radius: 1000px;
+}
+
+.campo {
+    margin-bottom: 25px;
+}
+
+.campo label {
+    display: block;
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.campo textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 0 0 12px 12px;
+    background-color: #d8d3d3;
+    font-size: 16px;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+}
+
+::placeholder {
+    color: var(--cor-principal);
+}
+
+.descricao {
+    width: 100%;
+}
+
+.descricao textarea {
+    height: 115px;
+}
+
+.texto-pequeno {
+    font-size: 8px;
+    margin-top: -18px;
+    padding-left: 5px;
+}
+
+.linha {
+    display: flex;
+    gap: 90px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.linha .campo {
+    width: 330px;
+}
+
+.linha textarea {
+    height: 120px;
+}
+
+.outras-info-geral {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.outras-info {
+    width: 100%;
+}
+
+.outras-info textarea {
+    height: 55px;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: -5px;
+    margin-left: 0;
+    flex-wrap: wrap;
+}
+
+.btn {
+    color: var(--cor-fundo);
+    padding: 8px 28px;
+    background-color: var(--cor-principal);
+    border-radius: 50px;
+    border: 2px solid var(--cor-principal);
+    transition: all 0.4s;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn:hover {
+    color: var(--cor-principal);
+    background-color: transparent;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid black;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+}
+
+footer img {
+    width: 100px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer nav a {
+    color: var(--cor-fundo);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+        padding: 30px !important;
+    }
+
+    h2 {
+        font-size: 32px !important;
+    }
+
+    .conteudo2 {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .conteudo {
+        width: 100% !important;
+    }
+
+    .perfil-topo {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    .perfil-topo img {
+        width: 160px !important;
+    }
+
+    .descricao {
+        width: 100% !important;
+    }
+
+    .descricao textarea {
+        height: 170px !important;
+    }
+
+    .linha {
+        flex-direction: row !important;
+        gap: 20px !important;
+        margin-left: 0 !important;
+    }
+
+    .linha .campo {
+        width: 50% !important;
+    }
+
+    .outras-info-geral {
+        width: 100% !important;
+    }
+
+    .outras-info textarea {
+        height: 100px !important;
+    }
+
+    .botoes {
+        width: 100% !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+
+    footer {
+        flex-wrap: wrap !important;
+        justify-content: space-around !important;
+        text-align: center !important;
+        gap: 25px !important;
+        padding: 25px !important;
+    }
+
+    footer nav,
+    .redes {
+        align-items: center !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    main {
+        padding: 20px !important;
+    }
+
+    h2 {
+        font-size: 26px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .conteudo2 {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .conteudo {
+        width: 100% !important;
+    }
+
+    .perfil-topo {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    .perfil-topo img {
+        width: 130px !important;
+    }
+
+    .descricao {
+        width: 100% !important;
+    }
+
+    .descricao textarea {
+        height: 160px !important;
+    }
+
+    .texto-pequeno {
+        font-size: 8px !important;
+        margin-top: -25px !important;
+        text-align: left !important;
+    }
+
+    .linha {
+        flex-direction: column !important;
+        gap: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 20px !important;
+    }
+
+    .linha .campo {
+        width: 100% !important;
+    }
+
+    .outras-info-geral {
+        width: 100% !important;
+    }
+
+    .campo label {
+        font-size: 13px !important;
+        padding: 7px 12px !important;
+    }
+
+    .campo textarea {
+        padding: 12px !important;
+        font-size: 14px !important;
+    }
+
+    .linha textarea {
+        height: 100px !important;
+    }
+
+    .outras-info textarea {
+        height: 90px !important;
+    }
+
+    .botoes {
+        width: 100% !important;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+
+    .btn {
+        font-size: 13px !important;
+        padding: 5px 14px !important;
+    }
+
+    footer {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        gap: 20px !important;
+        padding: 20px !important;
+    }
+
+    footer nav,
+    .redes {
+        align-items: center !important;
+    }
+}
