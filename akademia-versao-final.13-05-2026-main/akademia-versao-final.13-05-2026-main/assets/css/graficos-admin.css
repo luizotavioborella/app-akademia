@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    resize: none;
+}
+
+:root {
+    --cor-fundo: #F6E4D1;
+    --cor-principal: #FF6D1D;
+    --cor-fundo-secundaria: #E1DEDE;
+    --cor-textos: #000000;
+    --cor-fundo-terciaria: #BEBEBE;
+    --azul-escuro: #1E2631;
+}
+
+main {
+    padding: 30px 40px;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "Inter", sans-serif;
+    color: var(--azul-escuro);
+}
+
+.cabecalho h2 {
+    font-family: Krona One, sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.conteudo-graficos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.graficos-juntos {
+    display: flex;
+    gap: 30px;
+}
+
+.graficos h3 {
+    color: var(--cor-principal);
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.grafico {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grafico img {
+    width: 100%;
+    height: auto;
+}
+
+.cards-laterais {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 300px;
+}
+
+.cartao-informacoes {
+    background-color: #d8d3d3;
+    border-radius: 14px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.icone-card {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-card img {
+    width: 28px;
+}
+
+.azul {
+    background-color: #BDD9FE;
+}
+
+.verde {
+    background-color: #BFFFA8;
+}
+
+.roxo {
+    background-color: #EAD2FF;
+}
+
+.cards-laterais .botoes a {
+    padding: 8px 22px;
+    font-size: 15px;
+}
+
+.cartao-informacoes p {
+    color: var(--cor-principal);
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.cartao-informacoes h4 {
+    font-size: 18px;
+    color: var(--azul-escuro);
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.botoes a {
+    width: fit-content;
+
+    color: var(--cor-fundo);
+
+    padding: 10px 18px;
+
+    background-color: var(--cor-principal);
+
+    border-radius: 50px;
+    border: 2px solid var(--cor-principal);
+
+    transition: all 0.4s;
+}
+
+.botoes a:hover {
+    color: var(--cor-principal);
+    background-color: transparent;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-top: 1px solid black;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    margin-top: 80px;
+}
+
+footer img {
+    margin-bottom: 30px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer nav a {
+    color: var(--cor-fundo);
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    main{
+        padding: 30px;
+    }
+
+    .cabecalho{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cabecalho h2{
+        font-size: 30px;
+    }
+
+    .conteudo-graficos{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .graficos-juntos{
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .grafico{
+        max-width: 320px;
+    }
+
+    .cards-laterais{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .cartao-informacoes{
+        padding: 16px;
+    }
+
+    .botoes{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .botoes a{
+        text-align: center;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    footer nav,
+    .redes{
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px){
+
+    main{
+        padding: 20px;
+    }
+
+    .cabecalho{
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .cabecalho h2{
+        font-size: 24px;
+    }
+
+    .conteudo-graficos{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .graficos-juntos{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .graficos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .graficos h3{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .grafico{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .cards-laterais{
+        width: 100%;
+        gap: 15px;
+    }
+
+    .cartao-informacoes{
+        padding: 12px;
+        border-radius: 12px;
+        gap: 10px;
+    }
+
+    .icone-card{
+        width: 45px;
+        height: 45px;
+    }
+
+    .icone-card img{
+        width: 22px;
+    }
+
+    .cartao-informacoes p{
+        font-size: 12px;
+    }
+
+    .cartao-informacoes h4{
+        font-size: 16px;
+    }
+
+    .botoes{
+        width: 100%;
+        align-items: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+    
+
+    .botoes a{
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    footer nav,
+    .redes{
+        align-items: center;
+    }
+
+    footer img{
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    footer p,
+    footer a{
+        font-size: 12px;
+    }
+}

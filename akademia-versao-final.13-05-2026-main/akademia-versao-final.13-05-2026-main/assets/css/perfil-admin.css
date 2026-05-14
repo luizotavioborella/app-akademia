@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    resize: none;
+}
+
+:root {
+    --cor-fundo: #F6E4D1;
+    --cor-principal: #FF6D1D;
+    --cor-fundo-secundaria: #E1DEDE;
+    --cor-textos: #000000;
+    --cor-fundo-terciaria: #BEBEBE;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "Inter", sans-serif;
+    color: var(--cor-textos);
+}
+
+main {
+    padding: 25px;
+}
+
+h2 {
+    font-family: "Krona One", sans-serif;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil_descricao {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 40px;
+}
+
+.perfil {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.perfil-e-botao {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    width: 100%;
+    max-width: 430px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 25px 25px 0 0;
+    font-size: 18px;
+}
+
+.campo textarea {
+    width: 100%;
+    height: 170px;
+    background-color: #d8d3d3;
+    padding: 20px;
+    border-radius: 0 0 25px 25px;
+    font-size: 16px;
+    color: var(--cor-principal);
+}
+
+::placeholder {
+    color: var(--cor-principal);
+    font-family: "Inter", sans-serif;
+}
+
+.campo p {
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.btn_voltar {
+    width: fit-content;
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: 2px solid var(--cor-principal);
+    transition: 0.3s;
+    margin-top: 250px;
+}
+
+.btn_voltar:hover {
+    background-color: transparent;
+    color: var(--cor-principal);
+}
+
+.campo2 {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacao1 {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 25px 25px 0 0;
+    font-size: 18px;
+}
+
+.navegacao2 {
+    background-color: #d8d3d3;
+    min-height: 430px;
+    padding: 25px;
+    border-radius: 0 0 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+    width: fit-content;
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 2px solid var(--cor-principal);
+    transition: 0.3s;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+    background-color: transparent;
+    color: var(--cor-principal);
+}
+
+footer {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 35px;
+    color: white;
+    margin-top: 50px;
+}
+
+footer div,
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer nav a {
+    color: white;
+}
+
+footer nav a {
+    color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    main{
+        padding: 30px;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .perfil_descricao{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .perfil-e-botao{
+        align-items: center;
+    }
+
+    .perfil{
+        width: 160px;
+    }
+
+    .btn_voltar{
+        margin-top: 25px;
+    }
+
+    .campo{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .campo textarea{
+        height: 220px;
+    }
+
+    .campo2{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .navegacao2{
+        min-height: auto;
+        align-items: center;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3{
+        width: 250px;
+        text-align: center;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    footer nav,
+    .redes{
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px){
+
+    main{
+        padding: 20px;
+    }
+
+    h2{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .perfil_descricao{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .perfil-e-botao{
+        align-items: center;
+        width: 100%;
+    }
+
+    .perfil{
+        width: 120px;
+    }
+
+    .btn_voltar{
+        margin-top: 20px;
+        padding: 7px 18px;
+        font-size: 13px;
+    }
+
+    .campo{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .campo label,
+    .navegacao1{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .campo textarea{
+        height: 180px;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .campo p{
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .campo2{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .navegacao2{
+        min-height: auto;
+        padding: 20px;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3{
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    footer nav,
+    .redes{
+        align-items: center;
+    }
+
+    footer img{
+        width: 80px;
+    }
+
+    footer p,
+    footer a{
+        font-size: 12px;
+    }
+}
