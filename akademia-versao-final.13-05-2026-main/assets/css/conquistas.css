@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    resize: none;
+}
+
+:root {
+    --cor-fundo: #F6E4D1;
+    --cor-principal: #FF6D1D;
+    --cor-fundo-secundaria: #E1DEDE;
+    --cor-textos: #000000;
+    --cor-fundo-terciaria: #BEBEBE;
+    --azul-escuro: #1E2631;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "Inter", sans-serif;
+    color: var(--cor-textos);
+}
+
+main {
+    padding: 20px 35px;
+}
+
+h2 {
+    font-family: "Krona One", sans-serif;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.area-conquistas {
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.resumo {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-resumo {
+    background-color: #d8d3d3;
+    border-radius: 10px;
+    min-height: 75px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    text-align: center;
+}
+
+.card-resumo > div:last-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone {
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icone img {
+    width: 48px;
+    height: 48px;
+}
+
+.amarelo {
+    background-color: #fff7a5;
+}
+
+.vermelho {
+    background-color: #ff9b9b;
+}
+
+.verde {
+    background-color: #b5ff87;
+}
+
+.roxo {
+    background-color: #d9b2ff;
+}
+
+.card-resumo p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.card-resumo h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.painel {
+    background-color: #d8d3d3;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.painel h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.painel-badges {
+    width: 290px;
+}
+
+.painel-missoes {
+    width: 295px;
+}
+
+.painel-ranking {
+    width: 290px;
+}
+
+.lista {
+    width: 100%;
+}
+
+.item-badge {
+    min-height: 50px;
+    background-color: #fff45c;
+    padding: 6px 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.texto-badge {
+    width: 100%;
+}
+
+.item-badge h4 {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.item-badge p {
+    font-size: 9px;
+    margin-top: 4px;
+}
+
+.item-badge small {
+    font-size: 6px;
+}
+
+.item-badge span {
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+.barra-badge {
+    width: 80px;
+    height: 3px;
+    background-color: #5d5d5d;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.barra-badge div {
+    height: 100%;
+    background-color: #00e031;
+    border-radius: 10px;
+}
+
+.item-missao {
+    background-color: #c86bf7;
+    padding: 7px 8px;
+    min-height: 37px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.topo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo-item h4 {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.topo-item span {
+    font-size: 9px;
+}
+
+.item-missao small {
+    font-size: 6px;
+}
+
+.barra {
+    width: 80px;
+    height: 3px;
+    background-color: #5d5d5d;
+    margin: 4px auto 0;
+    border-radius: 10px;
+}
+
+.barra div {
+    height: 100%;
+    background-color: #00e031;
+    border-radius: 10px;
+}
+
+.progresso-25 {
+    width: 25%;
+}
+
+.progresso-50 {
+    width: 50%;
+}
+
+.progresso-75 {
+    width: 75%;
+}
+
+.progresso-100 {
+    width: 100%;
+}
+
+.item-ranking {
+    min-height: 49px;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.item-ranking h4 {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.item-ranking small {
+    font-size: 7px;
+}
+
+.trofeu {
+    width: 35px;
+    height: 35px;
+}
+
+.primeiro {
+    background-color: #ffe84e;
+}
+
+.segundo {
+    background-color: #c9c9c9;
+}
+
+.terceiro {
+    background-color: #ff9825;
+}
+
+.azul {
+    background-color: #8dccff;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    color: var(--cor-fundo);
+    padding: 5px 18px;
+    background-color: var(--cor-principal);
+    border-radius: 50px;
+    border: 2px solid var(--cor-principal);
+    transition: all 0.4s;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    color: var(--cor-principal);
+    background-color: transparent;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-top: 1px black solid;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+}
+
+footer img {
+    margin-bottom: 30px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer nav a {
+    color: var(--cor-fundo);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+        padding: 25px !important;
+    }
+
+    h2 {
+        font-size: 32px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .area-conquistas {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 18px !important;
+        width: 100% !important;
+    }
+
+    .resumo {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+    }
+
+    .card-resumo {
+        width: 100% !important;
+        max-width: 520px !important;
+        min-height: 85px !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .card-resumo > div:last-child {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .card-resumo p,
+    .card-resumo h3 {
+        text-align: center !important;
+    }
+
+    .painel,
+    .painel-badges,
+    .painel-missoes,
+    .painel-ranking {
+        width: 100% !important;
+    }
+
+    .botoes {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 12px !important;
+        margin-top: 25px !important;
+    }
+
+    .btn {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 8px 28px !important;
+        font-size: 16px !important;
+    }
+
+    footer {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+        text-align: center !important;
+        gap: 25px !important;
+        padding: 25px !important;
+    }
+
+    footer nav,
+    .redes {
+        align-items: center !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    main {
+        padding: 15px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+        margin-bottom: 18px !important;
+    }
+
+    .area-conquistas {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+
+    .resumo {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+    }
+
+    .card-resumo {
+        width: 100% !important;
+        min-height: 82px !important;
+        padding: 10px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 18px !important;
+
+        text-align: center !important;
+    }
+
+    .card-resumo > div:last-child {
+        flex: 1 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .icone {
+        width: 58px !important;
+        height: 58px !important;
+    }
+
+    .icone img {
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    .card-resumo p {
+        font-size: 14px !important;
+        margin: 0 0 8px 0 !important;
+        text-align: center !important;
+    }
+
+    .card-resumo h3 {
+        font-size: 20px !important;
+        margin: 0 !important;
+        text-align: center !important;
+    }
+
+    .painel,
+    .painel-badges,
+    .painel-missoes,
+    .painel-ranking {
+        width: 100% !important;
+    }
+
+    .painel {
+        padding: 8px !important;
+    }
+
+    .painel h3 {
+        font-size: 15px !important;
+    }
+
+    .item-badge,
+    .item-missao,
+    .item-ranking {
+        width: 100% !important;
+    }
+
+    .item-badge h4,
+    .topo-item h4,
+    .item-ranking h4 {
+        font-size: 11px !important;
+    }
+
+    .item-badge p {
+        font-size: 9px !important;
+    }
+
+    .item-badge small,
+    .item-missao small,
+    .item-ranking small {
+        font-size: 7px !important;
+    }
+
+    .item-badge span,
+    .topo-item span {
+        font-size: 9px !important;
+    }
+
+    .barra,
+    .barra-badge {
+        width: 90px !important;
+        height: 4px !important;
+    }
+
+    .botoes {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+        margin-top: 22px !important;
+    }
+
+    .btn {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 8px 22px !important;
+        font-size: 14px !important;
+        margin: 0 !important;
+    }
+
+    footer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        gap: 20px !important;
+        padding: 20px !important;
+    }
+
+    footer nav,
+    .redes {
+        align-items: center !important;
+    }
+}

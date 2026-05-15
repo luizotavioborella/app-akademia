@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    resize: none;
+}
+
+:root {
+    --cor-fundo: #F6E4D1;
+    --cor-principal: #FF6D1D;
+    --cor-fundo-secundaria: #E1DEDE;
+    --cor-textos: #000000;
+    --cor-fundo-terciaria: #BEBEBE;
+    --azul-escuro: #1E2631;
+}
+nav a{
+    color: #F6E4D1;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    background-color: var(--cor-principal);
+}
+
+header img {
+    margin-left: 10px;
+}
+
+main {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+h2 {
+    font-family: Krona One, sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.conteudo-geral {
+    display: flex;
+    flex-direction: row;
+}
+
+.graficos{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 40%;
+    align-items: center;
+}
+
+.graficos img {
+    width: 60%;
+}
+
+.conteudo-lateral {
+    display: flex;
+    flex-direction: column;
+}
+
+.quadros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.quadro-info {
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 15px;
+    width: 23%;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.quadro-info img {
+    width: 40px;
+}
+
+.quadro-info p {
+    margin: auto;
+}
+
+.quadro-info h3 {
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.icone1 {
+    background-color: #72ADE5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.icone2 {
+    background-color: #7DFF86;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.icone3 {
+    background-color: #FFFA74;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.icone4 {
+    background-color: #EF89FF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.rankings {
+    display: flex;
+    flex-direction: row;
+}
+
+.top5 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    width: 48%;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 25px;
+    background-color: var(--cor-fundo-secundaria);
+}
+
+.top5 p {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.aluno {
+    background-color: #A9FFAF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.podio {
+    background-color: #2AEE37;
+    border-radius: 15px;
+    margin: 5px;
+    width: 15%;
+    align-items: center;
+    padding: 10px;
+}
+
+.podio p {
+    text-align: center;
+    margin: 0px;
+}
+
+.porcentagem{
+    margin-right: 15px;
+}
+
+.baixa-adesao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    width: 48%;
+    height: 80%;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 25px;
+    background-color: var(--cor-fundo-secundaria);
+}
+
+.baixa-adesao p {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.aluno-adesao {
+    background-color: #FFA9A9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.etiqueta {
+    background-color: #EE2A2A;
+    border-radius: 15px;
+    margin: 5px;
+    width: 15%;
+    align-items: center;
+    padding: 10px;
+}
+
+.etiqueta p {
+    text-align: center;
+    margin: 0px;
+}
+
+.descricao-aluno p {
+    justify-content: left;
+    margin-left: 0px;
+}
+
+.descricao-aluno {
+    padding-bottom: 10px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    bottom: 60px;
+    gap: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.btn1 {
+    color: var(--cor-fundo);
+    padding: 5px 18px;
+    background-color: var(--cor-principal);
+    border-radius: 50px;
+    border: 2px solid var(--cor-principal);
+    transition: all 0.4s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.btn2 {
+    color: var(--cor-fundo);
+    padding: 5px 18px;
+    background-color: var(--cor-principal);
+    border-radius: 50px;
+    border: 2px solid var(--cor-principal);
+    transition: all 0.4s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.btn3 {
+    color: var(--cor-fundo);
+    padding: 5px 18px;
+    background-color: var(--cor-principal);
+    border-radius: 50px;
+    border: 2px solid var(--cor-principal);
+    transition: all 0.4s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.btn1:hover {
+    color: var(--cor-principal);
+    background-color: transparent;
+}
+
+.btn2:hover {
+    color: var(--cor-principal);
+    background-color: transparent;
+}
+
+.btn3:hover {
+    color: var(--cor-principal);
+    background-color: transparent;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-top: 1px black solid;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    main{
+        padding: 20px;
+    }
+
+    .conteudo-geral{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .graficos{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .graficos img{
+        width: 40%;
+    }
+
+    .conteudo-lateral{
+        width: 100%;
+    }
+
+    .quadros{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .quadro-info{
+        width: 48%;
+    }
+
+    .rankings{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .top5,
+    .baixa-adesao{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .botoes{
+        position: static;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    footer{
+        top: 100px;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 767px){
+
+     main{
+        padding: 10px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .botoes{
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 10px 0 20px 0;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3{
+        width: auto;
+        padding: 5px 12px;
+        font-size: 11px;
+    }
+
+    .conteudo-geral{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .graficos{
+        width: 100%;
+        gap: 15px;
+    }
+
+    .graficos img{
+        width: 75%;
+    }
+
+    .quadros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .quadro-info{
+        width: 100%;
+        padding: 8px;
+        border-radius: 12px;
+    }
+
+    .quadro-info img{
+        width: 24px;
+    }
+
+    .quadro-info p{
+        font-size: 10px;
+    }
+
+    .quadro-info h3{
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .icone1,
+    .icone2,
+    .icone3,
+    .icone4{
+        padding: 6px;
+        margin: 0;
+    }
+    .rankings{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .top5,
+    .baixa-adesao{
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+        border-radius: 15px;
+    }
+
+    .top5 > p,
+    .baixa-adesao > p{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .aluno,
+    .aluno-adesao{
+        padding: 6px;
+        border-radius: 8px;
+    }
+
+    .descricao-aluno p{
+        font-size: 11px;
+    }
+
+    .descricao-aluno small{
+        font-size: 9px;
+    }
+
+    .porcentagem p{
+        font-size: 11px;
+    }
+
+    .podio,
+    .etiqueta{
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .podio p,
+    .etiqueta p{
+        font-size: 10px;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        top: 80px;
+        gap: 15px;
+    }
+
+    footer nav{
+        display: flex;
+        gap: 15px;
+    }
+}
